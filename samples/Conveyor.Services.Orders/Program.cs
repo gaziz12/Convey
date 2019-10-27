@@ -53,7 +53,7 @@ namespace Conveyor.Services.Orders
                         .AddEventHandlers()
                         .AddQueryHandlers()
                         .AddInMemoryCommandDispatcher()
-                        .AddInMemoryEventDispatcher()
+                        //.AddInMemoryEventDispatcher()
                         .AddInMemoryQueryDispatcher()
                         .AddRedis()
                         .AddRabbitMq(plugins: p => p.AddJaegerRabbitMqPlugin())
